@@ -1,32 +1,29 @@
-@font-face {
-  font-family: 'SEGA LOGO FONT';
+@font-face{
+  font-family:'SEGA LOGO FONT';
   font-style: normal;
   font-weight: normal;
-  src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+  src: local('SEGA LOGO FONT'),url('SEGA.woff') format('woff');
 }
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
 }
 
-body {
-background-color: #00767c;
-background: linear-gradient(to right, #00767c,#100510);
+body{
+  background-color: #00767c;
+  background: linear-gradient(to right, #00767c, #1105);
 }
-
-.title {
+.title{
   text-align: center;
-  font-family: 'SEGA LOGO FONT';
-  font-weight: 200;
+  font-family:'SEGA LOGO FONT';
+  font-weight:200;
   font-size: 3rem;
-  color: #0ccac4;
+   color: #0ccac4;
   margin: .67em 0;
-  line-height: 1, 5;
+  line-height: 1,5;
 }
-
-.search {
+.search{
   padding: 1rem;
   background-color: #cdecff;
   border: 1px solid #19a974;
@@ -35,99 +32,86 @@ background: linear-gradient(to right, #00767c,#100510);
   font-size: 100%;
   line-height: 1.15;
 }
-
-.card-list {
-  position: relative;
+.card-list{
+  position : relative;
 }
-
-.bg-green {
-  cursor: pointer;
-  border-radius: .5rem;
-  font-family: sans-serif;
-  line-height: 1.15;
-  background-color: #9eebcf;
-  padding: 1rem;
-  transition: transform .25s ease-out;
+.bg-green{
+cursor: pointer;
+border-radius: .5rem;
+font-family: sans-serif;
+line-height: 1.15;
+background-color: #9eebcf;
+padding: 1rem;
+transition: transform .25s ease-out;
 }
-
-.bg-green:hover {
-  transform: scale(1.05);
-  object-fit: cover;
-  text-align: center;
-  background-color: #b76e1a;
+.bg-green:hover{
+transform: scale(1.05);
+object-fit: cover;
+text-align: center;
+background-color: #ffa200;
 }
-
-.img {
-  max-width: 100%;
-  border-style: none;
-  height: 200px;
-  width: 200px;
+.img{
+max-width: 100%;
+border-style: none;
+height: 200px;
+width: 200px;
 }
-
-h5,
-p {
-  font-size: 1rem;
-  line-height: 1;
+h5,p{
+    font-size: 1rem;
+    line-height: 1;
 }
-
-@keyframes animate-preloading {
-
+@keyframes animate-preloading{
   0% {
     transform: rotate(0deg);
   }
-
-  100% {
-    transform: rotate(360deg);
-  }
+100% {
+       transform: rotate(360deg);
 }
-
-.loading {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 999;
+}
+.loading{
+  position : absolute;
+  top : 0;
+  left : 0;
+  right : 0;
+  bottom : 0;
+  z-index : 999;
   overflow: hidden;
   background: #00767c;
 }
-
-.loading:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30%);
-  left: calc(50% - 30%);
-  border: 6px solid #00767c;
-  border-top-color: #19a974;
-  border-bottom-color: #19a974;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloadig 1s linear infinite;
+.loading:before{
+content : "";
+position : fixed;
+top : calc(50% - 30%);
+left : calc(50% - 30%);
+border: 6px solid #00767c;
+border-top-color:#19a974;
+border-bottom-color : #19a974;
+border-radius: 50%;
+width: 60px;
+height: 60px;
+animation: animate-preloadig 1s linear infinite;
 
 }
-
-.modal-dialog {
-  height: 300px;
-  width: 600px;
+.modal-dialog{
+height: 300px;
+width: 600px;
 }
-
-.modal-bg-green {
-  cursor: pointer;
-  font-family: sans-serif;
-  line-height: 1.15;
-  background-color: #9eebcf;
-  padding: 16px;
-  object-fit: cover;
-  text-align: center;
-  transition: transform .25s ease-out;
+.detailRobot{
+font-family: sans-serif;
+line-height: 1.15;
+background-color: #9eebcf;
+padding: 16px;
+margin-left: 400px;
+text-align: center;
+width: 300px;
 }
-
-button {
-  background-color: #00767c;
+p{
+  color:black;
 }
-
-.news {
+h5{
+  color:black;
+}
+.news{
 margin-top: 15px;
 color: #fff;
 font-size: 1.5rem;
